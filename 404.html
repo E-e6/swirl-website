@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>404 Not Found | Swirl VR</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      background: #1a1a2e;
+      color: #e94560;
+      font-family: 'Orbitron', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      overflow: hidden;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 8rem;
+      margin: 0;
+      animation: pulse 2s infinite;
+      text-shadow: 0 0 10px #e94560, 0 0 20px #e94560;
+    }
+    p {
+      font-size: 1.5rem;
+      margin: 1rem 0 3rem 0;
+      color: #fff;
+      text-shadow: 0 0 5px #e94560;
+    }
+    @keyframes pulse {
+      0%, 100% {
+        text-shadow: 0 0 10px #e94560, 0 0 20px #e94560;
+      }
+      50% {
+        text-shadow: 0 0 20px #ff2e63, 0 0 40px #ff2e63;
+      }
+    }
+    button {
+      background: #e94560;
+      border: none;
+      padding: 1rem 3rem;
+      color: white;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(233, 69, 96, 0.6);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      user-select: none;
+    }
+    button:hover {
+      transform: scale(1.1) rotate(-5deg);
+      box-shadow: 0 6px 25px rgba(255, 46, 99, 0.9);
+      background: #ff2e63;
+    }
+    button:active {
+      transform: scale(0.95) rotate(0deg);
+      box-shadow: 0 3px 10px rgba(233, 69, 96, 0.7);
+    }
+    footer {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      color: #fff;
+      font-size: 0.9rem;
+      font-family: 'Georgia', serif;
+    }
+  </style>
+</head>
+<body>
+  <h1>404</h1>
+  <p>Oops! The page you’re looking for doesn’t exist.</p>
+  <button onclick="location.href='index.html'">Go Back Home</button>
+
+  <footer>
+    &copy; 2025 Swirl VR • Created by Bluelightning26
+  </footer>
+</body>
+</html>
